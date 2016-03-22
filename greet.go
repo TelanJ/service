@@ -11,6 +11,6 @@ type Args struct {
 type Reply string
 
 func (t *Service) Greet(args *Args, reply *Reply) error {
-	*reply = "Greetings!" + args.Name + "with id" + args.id
+	*reply = "Greetings!" + args.Name
 	return nil
 }
